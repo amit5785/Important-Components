@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 import { NavLink } from 'react-router-dom'
-import Logo from '../Assets/Logo'
+// import Logo from '../Assets/Logo'
 import './Navbar.css'
 
 
@@ -16,22 +16,28 @@ function Navbar()
     return (
         <nav className="navigation">
                 <div className="logo" >
-                    <NavLink to='/'>
-                    <Logo />
-                    </NavLink>
+                    {/* <NavLink to='/'> */}
+                    {/* <Logo /> */}
+                    {/* <h1>BRAND NAME/LOGO</h1> */}
+                    {/* </NavLink> */}
+                    <h1>BRAND NAME/LOGO</h1>
                 </div>
                 <ul className={open?'nav-links nav-active ':'nav-links'}>
                     <li  style={open?{animation:'navLinkFade 0.3s ease forwards 0.4s '}:{}}>
-                        <NavLink style={{textDecoration: 'none', color: 'white'}} to='/'>Home</NavLink>
+                        {/* <NavLink style={{textDecoration: 'none', color: 'white'}} to='#'>Home</NavLink> */}
+                        Home
                     </li>
                     <li style={open?{animation:'navLinkFade 0.3s ease forwards 0.4s '}:{}}>
-                        <NavLink style={{textDecoration: 'none', color: 'white'}} to='/team'>Team</NavLink>
+                        {/* <NavLink style={{textDecoration: 'none', color: 'white'}} to='/team'>Team</NavLink> */}
+                        team
                     </li>
                     <li style={open?{animation:'navLinkFade 0.3s ease forwards 0.4s '}:{}}>
-                        <NavLink style={{textDecoration: 'none', color: 'white'}} to='/event'>Event</NavLink>
+                        {/* <NavLink style={{textDecoration: 'none', color: 'white'}} to='/event'>Event</NavLink> */}
+                        Event
                     </li>
                     <li style={open?{animation:'navLinkFade 0.3s ease forwards 0.4s '}:{}}>
-                    <NavLink style={{textDecoration: 'none', color: 'white'}} to='/faculty'>Faculty's Bureau</NavLink>
+                    {/* <NavLink style={{textDecoration: 'none', color: 'white'}} to='/faculty'>Faculty's Bureau</NavLink> */}
+                    Faculty
                     </li>
                 </ul>
                 <div className={open?'burger toggle':'burger'} onClick={toggleBurger}  >
